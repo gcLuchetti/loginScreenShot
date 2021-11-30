@@ -8,8 +8,8 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-EMAIL_ADDRESS = 'gustavo.carvalhoads@gmail.com'
-EMAIL_PASSWORD = 'lynubwzxfdlpiwww'
+EMAIL_ADDRESS = 'your___Email'
+EMAIL_PASSWORD = 'email___Password'
 
 import cv2
 
@@ -35,7 +35,7 @@ with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
 
         msg = MIMEMultipart()
         msg['from'] = EMAIL_ADDRESS
-        msg['to'] = 'kafetaum69@gmail.com'
+        msg['to'] = 'email__To'
         msg['subject'] = subject
 
         img = os.getcwd() + "\\" + file
